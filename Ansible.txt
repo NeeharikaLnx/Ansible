@@ -400,3 +400,26 @@ This command tells Ansible to use the ec2.py script as the inventory source (-i 
 When you run Ansible commands using dynamic inventory, Ansible fetches the current list of hosts from the specified source (in this case, AWS), ensuring that your inventory is always up-to-date without manual intervention.
 
 So, in summary, static inventory requires manual maintenance of the inventory file, while dynamic inventory automatically fetches the list of hosts from external sources, making it more adaptable to changes in the infrastructure.
+
+
+
+
+PlayBooks in Ansible :
+name:
+hosts:
+tasks:
+     name:install package
+	 yum:
+	     name:httpd
+		 
+		 
+		 
+	
+command to run playbook : ansible-playbook filename
+	 
+	 
+	 
+	 
+	 
+yum remove pkg name (uninstall package)
+Define the play definition starts with dash , what is the name u want to use , 
